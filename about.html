@@ -23,7 +23,7 @@
     }
 
     .section-content {
-      padding: 40px 0;
+      padding: 20px 20px;
     }
 
     footer {
@@ -38,12 +38,23 @@
     }
 
     .back-btn {
-      margin: 20px;
-    }
-    .container {
+        margin: 10px;
+      }
+      .container {
       position: relative;
       z-index: 2;
     }
+      .bg-light.py-4 i {
+  margin-right: 5px;  /* Space between icon and text */
+  width: 20px;        /* Fixed width for icons */
+  text-align: center; /* Center the icons */
+}
+
+/* Optional: Add hover effect */
+.bg-light.py-4 p:hover i {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
   </style>
 </head>
 <body>
@@ -64,10 +75,40 @@
               </li>
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#courses">Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
+    </div>
+  </nav>
+  <!-- Add this after your existing navbar and before the content -->
+  <nav class="mobile-nav">
+    <div class="nav-items">
+      <a href="about-hi.html" class="nav-item">
+        <i class="fas fa-globe"></i>
+        हिन्दी
+      </a>
+      <a href="index.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        Home
+      </a>
+      <a href="index.html#courses" class="nav-item">
+        <i class="fas fa-book"></i>
+        Courses
+      </a>
+      <a href="gallery.html" class="nav-item">
+        <i class="fas fa-image"></i>
+        Gallery
+      </a>
+      <a href="about.html" class="nav-item">
+        <i class="fas fa-info-circle"></i>
+        About
+      </a>
+      <a href="#contact" class="nav-item">
+        <i class="fas fa-phone"></i>
+        Contact
+      </a>
     </div>
   </nav>
   <!-- Back Button -->
@@ -117,11 +158,12 @@
 
   <!-- Contact Info -->
   <section class="bg-light py-4">
-    <div class="container text-center">
+    <div class="container text-center" id="contact">
       <h4>Contact Information</h4>
       <p><i class="fas fa-map-marker-alt"></i> IN FRONT OF JK NURSHING HOME, SHASHTRI NAGAR FREEGANJ, UJJAIN, MADHYA PRADESH, 456010</p>
-      <p><i class="fas fa-phone"></i> +91 9644726315</p>
-      <p><i class="fas fa-envelope"></i> info@ganrajdefence.com</p>
+      <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919644726315">+91 9644726315</a></p>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@ganrajdefence.com">info@ganrajdefence.com</a></p>
+    
     </div>
   </section>
 

@@ -17,10 +17,24 @@
     .gallery-img:hover {
       transform: scale(1.05);
     }
-    .container {
+    .back-btn {
+        margin: 10px;
+      }
+      .container {
       position: relative;
       z-index: 2;
     }
+      .bg-light.py-4 i {
+  margin-right: 5px;  /* Space between icon and text */
+  width: 20px;        /* Fixed width for icons */
+  text-align: center; /* Center the icons */
+}
+
+/* Optional: Add hover effect */
+.bg-light.py-4 p:hover i {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
   </style>
 </head>
 <body>
@@ -44,6 +58,35 @@
           <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
         </ul>
       </div>
+    </div>
+  </nav>
+  <!-- Add this after your existing navbar and before the content -->
+  <nav class="mobile-nav">
+    <div class="nav-items">
+      <a href="gallery-hi.html" class="nav-item">
+        <i class="fas fa-globe"></i>
+        हिन्दी
+      </a>
+      <a href="#home" class="nav-item">
+        <i class="fas fa-home"></i>
+        Home
+      </a>
+      <a href="index.html#courses" class="nav-item">
+        <i class="fas fa-book"></i>
+        Courses
+      </a>
+      <a href="gallery.html" class="nav-item">
+        <i class="fas fa-image"></i>
+        Gallery
+      </a>
+      <a href="about.html" class="nav-item">
+        <i class="fas fa-info-circle"></i>
+        About
+      </a>
+      <a href="index.html#contact" class="nav-item">
+        <i class="fas fa-phone"></i>
+        Contact
+      </a>
     </div>
   </nav>
     <div class="container my-4">
