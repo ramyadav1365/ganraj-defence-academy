@@ -187,45 +187,47 @@ body {
 }
 
 /* Update media query */
-/* Remove the navbar display:none in mobile view */
+/* Mobile Styles (max-width: 768px) */
 @media (max-width: 768px) {
   .navbar {
-    /* Remove display: none to keep top navbar visible */
-    background: var(--primary-color);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1030;
+    background: var(--primary-color);
   }
-  
+
   .mobile-nav {
     display: block;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1030;
     background: var(--primary-color);
     padding: 10px 0;
-    z-index: 1030;
   }
-  
-  /* Adjust content spacing for both navbars */
-  .content-wrapper {
-    margin: 0px 0 0px 0; /* Top margin for top navbar, bottom for mobile nav */
-    padding: 2px 0 0 0;
-  }
-  
-  /* Adjust hero section */
-  .hero {
-    margin-top: 0;
-    min-height: calc(100vh - 121px); /* Account for both navbars (56px + 65px) */
-  }
-  
+
+  /* Adjust body padding to prevent overlap */
   body {
-    padding-bottom: 65px; /* For bottom mobile nav */
-    padding-top: 56px;    /* For top navbar */
+    padding-top: calc(56px + env(safe-area-inset-top));     /* Top navbar height + iOS safe area */
+    padding-bottom: calc(65px + env(safe-area-inset-bottom)); /* Bottom navbar height + iOS safe area */
+  }
+
+  /* Adjust main content wrapper spacing */
+  .content-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Optional: Adjust hero section height */
+  .hero {
+    min-height: calc(100vh - 121px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   }
 }
+
 .container {
   position: relative;
   z-index: 2;
