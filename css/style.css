@@ -187,20 +187,45 @@ body {
 }
 
 /* Update media query */
+/* Remove the navbar display:none in mobile view */
 @media (max-width: 768px) {
   .navbar {
-    display: none;
+    /* Remove display: none to keep top navbar visible */
+    background: var(--primary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
   }
   
   .mobile-nav {
     display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--primary-color);
+    padding: 10px 0;
+    z-index: 1030;
+  }
+  
+  /* Adjust content spacing for both navbars */
+  .content-wrapper {
+    margin: 0px 0 0px 0; /* Top margin for top navbar, bottom for mobile nav */
+    padding: 2px 0 0 0;
+  }
+  
+  /* Adjust hero section */
+  .hero {
+    margin-top: 0;
+    min-height: calc(100vh - 121px); /* Account for both navbars (56px + 65px) */
   }
   
   body {
-    padding-bottom: 65px; /* Add padding to prevent content from being hidden by mobile nav */
+    padding-bottom: 65px; /* For bottom mobile nav */
+    padding-top: 56px;    /* For top navbar */
   }
 }
-
 .container {
   position: relative;
   z-index: 2;
