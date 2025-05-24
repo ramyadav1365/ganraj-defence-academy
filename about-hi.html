@@ -21,7 +21,8 @@
       }
   
       .section-content {
-        padding: 40px 0;
+        padding: 20px 20px;
+        
       }
   
       footer {
@@ -36,8 +37,23 @@
       }
   
       .back-btn {
-        margin: 0px;
+        margin: 10px;
       }
+      .container {
+      position: relative;
+      z-index: 2;
+    }
+      .bg-light.py-4 i {
+  margin-right: 5px;  /* Space between icon and text */
+  width: 20px;        /* Fixed width for icons */
+  text-align: center; /* Center the icons */
+}
+
+/* Optional: Add hover effect */
+.bg-light.py-4 p:hover i {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
     </style>
   <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.NJgGN_yGIWM.L.W.O/am=AAY/d=0/rs=AN8SPfrTSMIvWAFISYN4u74dPJrX0HgUsw/m=el_main_css"></head>
   <body>
@@ -55,12 +71,43 @@
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">English</a>
                   </li>
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#courses">Courses</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-            </ul>
+                  <li class="nav-item"><a class="nav-link" href="index-hi.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">होम</font></font></a></li>
+                  <li class="nav-item"><a class="nav-link" href="index-hi.html#courses"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">पाठ्यक्रम</font></font></a></li>
+                  <li class="nav-item"><a class="nav-link" href="gallery-hi.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गैलरी</font></font></a></li>
+                  <li class="nav-item"><a class="nav-link" href="about-hi.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हमारे बारे में</font></font></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संपर्क</font></font></a></li>
+         
+                </ul>
           </div>
+        </div>
+      </nav>
+      <nav class="mobile-nav">
+        <div class="nav-items">
+      
+          <a href="about.html" class="nav-item">
+            <i class="fas fa-globe"></i>
+            English
+          </a>
+          <a href="index-hi.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            होम
+          </a>
+          <a href="index-hi.html#courses" class="nav-item">
+            <i class="fas fa-book"></i>
+            पाठ्यक्रम
+          </a>
+          <a href="gallery-hi.html" class="nav-item">
+            <i class="fas fa-image"></i>
+            गैलरी
+          </a>
+          <a href="about-hi.html" class="nav-item">
+            <i class="fas fa-info-circle"></i>
+            हमारे बारे में
+          </a>
+          <a href="#contact" class="nav-item">
+            <i class="fas fa-phone"></i>
+            संपर्क
+          </a>
         </div>
       </nav>
     <!-- Back Button -->
@@ -69,7 +116,7 @@
     <section class="hero-section">
       <div class="container">
         <div class="container">
-            <a href="index.html" class="btn btn-secondary back-btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">← होम पर वापस जाएं</font></font></a>
+            <a href="index-hi.html" class="btn btn-secondary back-btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">← होम पर वापस जाएं</font></font></a>
           </div>
         
         <h1 class="display-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गणराज डिफेंस अकादमी के बारे में</font></font></h1>
@@ -110,11 +157,12 @@
   
     <!-- Contact Info -->
     <section class="bg-light py-4">
-      <div class="container text-center">
+      <div class="container text-center" id="contact">
         <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संपर्क जानकारी</font></font></h4>
         <p><i class="fas fa-map-marker-alt"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">जेके नर्सिंग होम के सामने, शास्त्री नगर फ्रीगंज, उज्जैन, मध्य प्रदेश, 456010</font></font></p>
-        <p><i class="fas fa-phone"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+91 9644726315</font></font></p>
-        <p><i class="fas fa-envelope"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">info@ganrajdefence.com</font></font></p>
+        <p><i class="fas fa-phone"></i> फ़ोन: <a href="tel:+919644726315">+91 9644726315</a></p>
+        <p><i class="fas fa-envelope"></i> ईमेल: <a href="mailto:info@ganrajdefence.com">info@ganrajdefence.com</a></p>
+   
       </div>
     </section>
   

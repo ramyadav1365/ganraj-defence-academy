@@ -83,6 +83,8 @@
         margin-left: 0;
       }
     }
+  
+    
   </style>
 </head>
 <body>
@@ -108,6 +110,35 @@
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
+  </div>
+</nav>
+<!-- Add this after your existing navbar and before the content -->
+<nav class="mobile-nav">
+  <div class="nav-items">
+    <a href="index-hi.html" class="nav-item">
+      <i class="fas fa-globe"></i>
+      हिन्दी
+    </a>
+    <a href="index.html" class="nav-item">
+      <i class="fas fa-home"></i>
+      Home
+    </a>
+    <a href="index.html#courses" class="nav-item">
+      <i class="fas fa-book"></i>
+      Courses
+    </a>
+    <a href="gallery.html" class="nav-item">
+      <i class="fas fa-image"></i>
+      Gallery
+    </a>
+    <a href="about.html" class="nav-item">
+      <i class="fas fa-info-circle"></i>
+      About
+    </a>
+    <a href="#contact" class="nav-item">
+      <i class="fas fa-phone"></i>
+      Contact
+    </a>
   </div>
 </nav>
 
@@ -217,15 +248,16 @@
               <div class="mb-3">
                 <textarea class="form-control" name="message" placeholder="Your Message*" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Send Enquiry</button>
+              <button type="submit" class="btn btn-primary" style="margin-bottom: 10px;">Send Enquiry</button>
             </form>
           </div>
           <div class="col-lg-6">
             <div class="p-4 bg-white shadow rounded">
               <h4>Get in Touch</h4>
               <p><i class="fas fa-map-marker-alt"></i> Location: IN FRONT OF JK NURSHING HOME, SHASHTRI NAGAR FREEGANJ UJJAIN MADHYA PRADESH, 456010</p>
-              <p><i class="fas fa-phone"></i> Phone: +91 9644726315</p>
-              <p><i class="fas fa-envelope"></i> Email: info@ganrajdefence.com</p>
+              <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919644726315">+91 9644726315</a></p>
+              <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@ganrajdefence.com">info@ganrajdefence.com</a></p>
+    
             </div>
           </div>
         </div>
